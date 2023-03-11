@@ -1,1 +1,2 @@
-# ce100-hw1-hamzaeren-gencalioglu
+# Hamza Eren Gencalioglu
+# Bayram Kamus
