@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "huNWajEL+AMqP1EzjemeIbzdMmbNByTCQhPa41Y8Kf0bEAFupWsOpjV5pBkhdi7AS/omnxH3XhFEOH9wv8nGJQ==",
+  "dgSpecHash": "ulUYvavaSKfpfDncr7rswiamGWy3RwNEF/fcYP8pBeBMbrW2JVa3aOLO2USGs3rT+B27yQ4D0/Q/Ah4bj+7KNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\genca\\OneDrive\\Masaüstü\\ce100-hw1-sln\\ce100-hw1-algo-test-cs\\ce100-hw1-algo-test-cs.csproj",
+  "projectFilePath": "C:\\Users\\genca\\OneDrive\\Masaüstü\\ce100-hw1\\ce100-hw1-hamzaeren-gencalioglu\\ce100-hw1-algo-test-cs\\ce100-hw1-algo-test-cs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\genca\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\genca\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

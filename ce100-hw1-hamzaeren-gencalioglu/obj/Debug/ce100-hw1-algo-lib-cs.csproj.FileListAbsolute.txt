@@ -4,3 +4,9 @@ C:\Users\genca\source\repos\ce100-hw1-sln\ce100-hw1-hamzaeren-gencalioglu\obj\De
 C:\Users\genca\source\repos\ce100-hw1-sln\ce100-hw1-hamzaeren-gencalioglu\obj\Debug\ce100-hw1-algo-lib-cs.csproj.CoreCompileInputs.cache
 C:\Users\genca\source\repos\ce100-hw1-sln\ce100-hw1-hamzaeren-gencalioglu\obj\Debug\ce100-hw1-hamzaeren-gencalioglu.dll
 C:\Users\genca\source\repos\ce100-hw1-sln\ce100-hw1-hamzaeren-gencalioglu\obj\Debug\ce100-hw1-hamzaeren-gencalioglu.pdb
+C:\Users\genca\OneDrive\Masaüstü\ce100-hw1\ce100-hw1-hamzaeren-gencalioglu\ce100-hw1-hamzaeren-gencalioglu\bin\Debug\ce100-hw1-hamzaeren-gencalioglu.dll
+C:\Users\genca\OneDrive\Masaüstü\ce100-hw1\ce100-hw1-hamzaeren-gencalioglu\ce100-hw1-hamzaeren-gencalioglu\bin\Debug\ce100-hw1-hamzaeren-gencalioglu.pdb
+C:\Users\genca\OneDrive\Masaüstü\ce100-hw1\ce100-hw1-hamzaeren-gencalioglu\ce100-hw1-hamzaeren-gencalioglu\obj\Debug\ce100-hw1-algo-lib-cs.csproj.AssemblyReference.cache
+C:\Users\genca\OneDrive\Masaüstü\ce100-hw1\ce100-hw1-hamzaeren-gencalioglu\ce100-hw1-hamzaeren-gencalioglu\obj\Debug\ce100-hw1-algo-lib-cs.csproj.CoreCompileInputs.cache
+C:\Users\genca\OneDrive\Masaüstü\ce100-hw1\ce100-hw1-hamzaeren-gencalioglu\ce100-hw1-hamzaeren-gencalioglu\obj\Debug\ce100-hw1-hamzaeren-gencalioglu.dll
+C:\Users\genca\OneDrive\Masaüstü\ce100-hw1\ce100-hw1-hamzaeren-gencalioglu\ce100-hw1-hamzaeren-gencalioglu\obj\Debug\ce100-hw1-hamzaeren-gencalioglu.pdb

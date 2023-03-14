@@ -398,7 +398,265 @@ namespace ce100_hw1_hamzaeren_gencalioglu
                 QuickSortHoares(arr, pi + 1, high);
             }
         }
-      
+
+        /**
+         *  @ name   Random Quick Sort Lomuto
+         *  @ brief  Quick Sort Hoare's Algorithm
+         *  
+         *         This function takes last element as pivot,
+         *    places the pivot element at its correct
+         *   position in sorted array, and places all
+         *  smaller (smaller than pivot) to left of
+         *  pivot and all greater elements to right
+         *  of pivot 
+         *
+         * @retval  [\b n] Random Quick Sort Lomuto
+         *
+         **/
+        static int PartitionRL(int[] arr, int low, int high)
+        {
+
+            // pivot is chosen randomly
+            RandomQSL(arr, low, high);
+            int pivot = arr[high];
+
+            int i = (low - 1); // index of smaller element
+            for (int j = low; j < high; j++)
+            {
+
+                // If current element is smaller than or
+                // equal to pivot
+                if (arr[j] < pivot)
+                {
+                    i++;
+
+                    // swap arr[i] and arr[j]
+                    int tempp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tempp;
+                }
+            }
+
+            // swap arr[i+1] and arr[high] (or pivot)
+            int tempp2 = arr[i + 1];
+            arr[i + 1] = arr[high];
+            arr[high] = tempp2;
+
+            return i + 1;
+        }
+
+
+        static int RandomQSL(int[] arr, int low, int high)
+        {
+
+            Random rand = new Random();
+            int pivot = rand.Next() % (high - low) + low;
+
+            int tempp1 = arr[pivot];
+            arr[pivot] = arr[high];
+            arr[high] = tempp1;
+
+            return Partition(arr, low, high);
+        }
+
+        public static void RandomQuickSortLomuto(int[] arr, int low, int high)
+        {
+            if (low < high)
+            {
+                /* pi is partitioning index, arr[pi] is
+                      now at right place */
+                int pi = Partition(arr, low, high);
+
+                /* Recursively sort elements before
+                 partition and after partition*/
+                RandomQuickSortLomuto(arr, low, pi - 1);
+                RandomQuickSortLomuto(arr, pi + 1, high);
+            }
+        }
+
+
+        //Binary Search Iterative
+        /**
+*
+*	  @name   Binary Search Iterative (ce100_Binary_Search_Iterative)
+*
+*	  @brief Binary Search Iterative Function
+*
+*	  It is a function that helps us find the rank of any number in an ordered array, starting from 0.
+*	  
+*
+*	  @param  [in] İnputArray [\b int]  key of Binary Search Iterative Function 
+*
+*	  @retval [\b int] function Binray Search Iterative*/
+
+        public static int BinarySearchIterative(int[] inputArray, int key)
+        {
+            int min = 0;
+            int max = inputArray.Length - 1;
+            while (min <= max)
+            {
+                int mid = (min + max) / 2;
+                if (key == inputArray[mid])
+                {
+                    return mid;
+                }
+                else if (key < inputArray[mid])
+                {
+                    max = mid - 1;
+                }
+                else
+                {
+                    min = mid + 1;
+                }
+            }
+            return -1;
+        }
+
+        //Binary Search Recursive
+        /**
+*
+*	  @name   Binary Search Recursive (ce100_Binary_Search_Recursive)
+*
+*	  @brief Binary Search Recursive Function
+*
+*	  It is a function that helps us find the rank of any number in an ordered array, starting from 0.
+*	  
+*
+*	  @param  [in] İnputArray , min [\b int]  max, key of Binary Search Recursive Function 
+*
+*	  @retval [\b int] function Binray Search Recursive*/
+
+
+        public static int BinarySearchRecursive(int[] inputArray, int min, int max, int key)
+        {
+
+
+            int mid = min + (max - min) / 2;
+
+            if (key == inputArray[mid])
+            {
+                return mid;
+            }
+            else if (key < inputArray[mid])
+            {
+                return BinarySearchRecursive(inputArray, min, mid - 1, key);
+            }
+            else
+            {
+                return BinarySearchRecursive(inputArray, mid + 1, max, key);
+            }
+
+        }
+
+
+
+        /**
+*
+*	  @name  Matrix Multiplication Iterative
+*
+*	  @brief Matrix Multiplication Iterative Algorithm
+*
+*	 
+*     
+*     @param  [in] mass [mat1, mat2, res int]   Matrix Multiplication Iterative in the serie
+*   @retval [\b n] Matrix Multiplication Iterative 
+*	  
+**/
+
+        static int n = 10;
+        public static void MatrixMultiplicationIterative(int[,] mat1,
+                         int[,] mat2, int[,] res)
+        {
+            int i, j, k;
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    res[i, j] = 0;
+                    for (k = 0; k < n; k++)
+                        res[i, j] += mat1[i, k]
+                                     * mat2[k, j];
+                }
+            }
+        }
+
+        public static int i = 0, j = 0, k = 0;
+        public static void MatrixMultiplicationRecursive(int row1, int col1,
+                                    int[,] A, int row2,
+                                    int col2, int[,] B,
+                                    int[,] C)
+        {
+            // If all rows traversed
+            if (i >= row1)
+                return;
+
+            // If i < row1
+            if (j < col2)
+            {
+                if (k < col1)
+                {
+                    C[i, j] += A[i, k] * B[k, j];
+                    k++;
+
+                    MatrixMultiplicationRecursive(row1, col1, A,
+                                      row2, col2, B, C);
+                }
+
+                k = 0;
+                j++;
+                MatrixMultiplicationRecursive(row1, col1, A,
+                                  row2, col2, B, C);
+            }
+
+            j = 0;
+            i++;
+            MatrixMultiplicationRecursive(row1, col1, A,
+                              row2, col2, B, C);
+        }
+
+
+        /**
+*
+*	  @name  Matrix Multiplication Strassen
+*
+*	  @brief Matrix Multiplication Strassen Algorithm
+*
+*	 
+*     
+*     @param  [in] mass [n, m1, m2 int]   Matrix Multiplication Strassen in the serie
+*   @retval [\b n] Matrix Multiplication Strassen 
+*	  
+**/
+        public static class MatrixMultiplicationStrassen
+        {
+            public static int[,] Strassen(int[,] A, int[,] B)
+            {
+                int i, j, k;
+                int N = A.GetLength(1);
+                int[,] C = new int[N, N];
+                if (N == 1)
+                {
+                    C[0, 0] = A[0, 0] * B[0, 0];
+                    return C;
+                }
+                else
+                {
+                    for (i = 0; i < N; i++)
+                    {
+                        for (j = 0; j < N; j++)
+                        {
+                            C[i, j] = 0;
+                            for (k = 0; k < N; k++)
+                            {
+                                C[i, j] += A[i, k] * B[k, j];
+                            }
+                        }
+                    }
+                    return C;
+                }
+            }
+
+        }
 
 
     }
