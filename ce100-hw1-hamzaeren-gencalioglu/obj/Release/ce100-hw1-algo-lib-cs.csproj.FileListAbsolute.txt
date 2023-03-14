@@ -1,0 +1,3 @@
+C:\Users\genca\source\repos\ce100-hw1-sln\ce100-hw1-hamzaeren-gencalioglu\obj\Release\ce100-hw1-algo-lib-cs.csproj.AssemblyReference.cache
+C:\Users\genca\source\repos\ce100-hw1-sln\ce100-hw1-hamzaeren-gencalioglu\obj\Release\ce100-hw1-algo-lib-cs.csproj.SuggestedBindingRedirects.cache
+C:\Users\genca\source\repos\ce100-hw1-sln\ce100-hw1-hamzaeren-gencalioglu\obj\Release\ce100-hw1-algo-lib-cs.csproj.CoreCompileInputs.cache
